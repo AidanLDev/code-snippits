@@ -1,0 +1,10 @@
+---
+// Use BaseHead in index.astro, layout.astro, and any file where it's not included in a layout
+import BaseHead from "./BaseHead.astro";
+import { SITE_DESCRIPTION, SITE_TITLE } from "./consts"
+---
+<html>
+    <head>
+        <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    </head>
+</html>
